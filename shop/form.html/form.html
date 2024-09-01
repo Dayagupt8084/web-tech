@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+            background-color: rgb(3, 3, 58);
+            color: white;
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+           align-items: center;
+           height: 50px;
+           background-color: rgb(53, 62, 145);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li{
+           list-style: none; 
+           margin: 0 23px;
+        }
+       .right li{
+        
+            cursor: pointer;   
+        }
+        .right li:hover{
+            color: aquamarine;
+            font-size: 1.02rem;
+        }
+        
+        .left{
+            font-size: 2rem;
+        }
+        .hr{
+            border:0 ;
+            color: blue;
+            height: 1.2px;
+            margin: 60px 40px;
+
+            
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px  0;
+        }
+        .firstSection > div {
+            font-size: 3rem;
+            width:30%;
+        
+        }
+        .leftSection div{
+           font-size: 3rem;
+        }
+       .rightSection img{
+        width: 648px;
+       }
+    .purple{
+        color: rgb(180, 139, 218);
+    }
+    .textgray{
+        color:gray;
+    }
+     
+    #element{
+        color: rgb(173, 126, 218);
+    }
+    .secondsection{
+        margin: auto;
+        max-width: 80vw;
+    }
+    .secondsection h1{
+        font-size: 1.9rem;
+        height: 80vh;
+    }
+    .secondsection .box{
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+
+    }
+    
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="left"> Daya's portfollio</div>
+                <div class=" right">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li> Projects</li>
+                        <li> Contact me</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    I am <span class="purple">DAYA</span>
+                    <div>and i am also a</div>
+                    <span id="element"></span>
+                </div>
+
+                <div class="rightSection">
+                    <img src="port1.webp" alt>
+                </div>
+
+            </section>
+            <hr>
+            <section class="secondsection">
+                <span class="textgray">this is the my work experience</span>
+                <h1>work experience</h1>
+                <div class="box">
+
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['Web developer', 'problem solver','Web designer'],
+              typeSpeed: 30,
+            });
+          </script>
+    </body>
+</html>
